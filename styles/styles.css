@@ -1,0 +1,29 @@
+body {
+
+}
+
+html {
+	background-image: url("http://i.imgur.com/uId5bmR.jpg");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+#head-title {
+	text-align: center;
+	font-size: 32px;
+	color: #730082;
+}
+
+.quiz-area {
+	margin: auto;
+	background-repeat: no-repeat;
+	width: 500px;
+	height: 500px;
+}
+
+.quiz-area img{
+	width: 100%;
+	height: auto;
+	opacity: 0.4;
+}
