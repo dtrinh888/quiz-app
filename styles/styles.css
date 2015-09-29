@@ -10,13 +10,13 @@ html {
 }
 
 #head-title {
-	text-align: center;
+	text-align: left;
 	font-size: 32px;
 	color: #730082;
 }
 
 .quiz-area {
-	margin: auto;
+	margin: -100px auto;
 	background-repeat: no-repeat;
 	width: 500px;
 	height: 500px;
