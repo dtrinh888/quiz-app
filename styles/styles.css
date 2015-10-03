@@ -1,29 +1,57 @@
+/* Styles go here */
 body {
-
+	color: white;
+	font-family: arial;
 }
 
 html {
-	background-image: url("http://i.imgur.com/uId5bmR.jpg");
-	background-size: auto;
-	background-repeat: no-repeat;
-	background-position: top center;
+	background-image: url("http://7-themes.com/data_images/out/63/6985871-lakers-logo-wallpaper-widescreen.jpg");
+	background-repeat: no-repeat;	
+	-webkit-background-size: cover;	
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: covers;
+	height: 100%;
+
 }
 
-#head-title {
-	text-align: left;
-	font-size: 32px;
-	color: #730082;
-}
-
-.quiz-area {
-	margin: -100px auto;
-	background-repeat: no-repeat;
+#quiz-area{
+	margin: 150px 160px;
+	padding: 100px 40px 40px 40px;
 	width: 500px;
-	height: 500px;
+	height: 400px;
+	background-image: url("http://hardwoodhustle.com/wp-content/uploads/2014/03/HWH-BG1.jpg");	
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-mox-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
 }
 
-.quiz-area img{
-	width: 100%;
-	height: auto;
-	opacity: 0.4;
+div #quiz-area{
+	border: red 1px solid;
+}
+
+#quiz-area ul {
+  border: 1px solid red;
+}
+
+#quiz-area li,
+#quiz-area ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#quiz-area .answer {
+  padding-left: 20px;
+}
+
+#next {
+	margin: 0px 0px;
 }
