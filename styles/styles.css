@@ -1,6 +1,6 @@
 /* Styles go here */
 body {
-	color: white;
+	color: purple;
 	font-family: arial;
 }
 
@@ -16,17 +16,16 @@ html {
 }
 
 #quiz-area{
-	margin: 150px 160px;
+	margin: 150px 0px;
 	padding: 100px 40px 40px 40px;
 	width: 500px;
-	height: 400px;
-	background-image: url("http://hardwoodhustle.com/wp-content/uploads/2014/03/HWH-BG1.jpg");	
-	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-mox-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	height: 200px;	
+	
 
+}
+
+#score{
+	margin: -100px 40px;
 }
 
 div #quiz-area{
@@ -52,6 +51,14 @@ div #quiz-area{
   padding-left: 20px;
 }
 
-#next {
-	margin: 0px 0px;
+#quiz-container {
+	margin: 150px 200px;	
+	width: 500px;
+	height: 500px;
+	background-image: url("http://hardwoodhustle.com/wp-content/uploads/2014/03/HWH-BG1.jpg");	
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-mox-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }

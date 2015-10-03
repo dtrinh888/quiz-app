@@ -136,7 +136,7 @@ questions.push({
   
   quizApp.questionDisplay(); // currentQuestion = 0, valid question
   
-  $('#next').on('click', quizApp.nextQuestion);
+  $('#score').on('click', quizApp.nextQuestion);
   $('#totalQuestions').text(questions.length);
   
   // TODO: Add event listener for reset
