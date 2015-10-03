@@ -18,7 +18,7 @@ html {
 #quiz-area{
 	margin: 150px 0px;
 	padding: 100px 40px 40px 40px;
-	width: 500px;
+	width: 400px;
 	height: 200px;	
 	
 
@@ -26,6 +26,14 @@ html {
 
 #score{
 	margin: -100px 40px;
+}
+
+#score-board{
+	color: red;
+	background-color: black;
+	font-weight: bold;
+	font-size: 24px;
+	margin-left: 20px;
 }
 
 div #quiz-area{

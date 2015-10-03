@@ -14,7 +14,7 @@ questions.push({
   selection: ['1990-1991', '1971-1972', '2000-2001', '1957-1958'],
   answer: 1
 });
-/*questions.push({
+questions.push({
   question: 'Which Laker holds the franchise record for most steals in a single game?',
   selection: ['Magic Johnson', 'Elgin Baylor', 'Kobe Bryant', 'Jerry West'],
   answer: 1
@@ -98,4 +98,4 @@ questions.push({
   question: 'How many years did Shaquille O\'Neal play as a Laker?',
   selection: ['10', '8', '6', '7'],
   answer: 1
-});*/
+});
