@@ -75,7 +75,7 @@ $(document).ready(function(){
     
     
     quiz.nextQuestion = function(){
-
+      var allQuestions = questions.length;
       if (!quiz.checkAnswer()){
         return;
       }
@@ -91,12 +91,12 @@ $(document).ready(function(){
         // to display an end message
         $('#next').hide();
         $('#score').hide();
-        if(correctAnswer >= 13){
-          quiz.target.html("Congrats you've recorded a score of " + correctAnswer + "/" + quiz.questions.length + "You definitely know about your Lakers!");
-        } else if (correctAnswer <= 12 && correctAnswer >= 7) {
-          quiz.target.html("Not bad you've recorded a score of " + correctAnswer + "/" + quiz.questions.length + "You somewhat know about your Lakers!");
+        if(correctAnswer/allQuestions === 1){
+          quiz.target.html("Congrats you've recorded a score of " + correctAnswer + "/" + quiz.questions.length + ". You definitely know about your Lakers!");
+        } else if (correctAnswer/allQuestions <= 0.7 && correctAnswer/allQuestions >= 0.9) {
+          quiz.target.html("Not bad you've recorded a score of " + correctAnswer + "/" + quiz.questions.length + ". You somewhat know about your Lakers!");
         } else {
-          quiz.target.html("That's horrible, you've recorded a score of " + correctAnswer + "/" + quiz.questions.length + "You know nothing about your Lakers!");
+          quiz.target.html("That's horrible, you've recorded a score of " + correctAnswer + "/" + quiz.questions.length + ". You know nothing about your Lakers!");
         }
       }
     };

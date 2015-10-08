@@ -16,7 +16,7 @@ html {
 }
 
 #quiz-area{
-	margin: 150px;
+	margin-top: 150px;
 	padding: 100px 40px 40px 40px;
 	width: 400px;
 	height: 200px;	
@@ -70,6 +70,7 @@ html {
 	background-size: cover;
 }
 
-#reset button{
-	margin: 145px 48px;
+#reset {
+	margin: 15px 45px;
+	float: left;
 }

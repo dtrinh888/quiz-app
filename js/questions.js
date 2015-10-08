@@ -1,5 +1,6 @@
 //questions to push into array
 var questions = [];
+
 questions.push({
   question: 'Who knocked out the Lakers in the 2006-2007 playoffs?',
   selection: ['Phoenix Suns', 'Denver Nuggets', 'San Antonio Spurs', 'Boston Celtics'],
@@ -15,7 +16,7 @@ questions.push({
   selection: ['1990-1991', '1971-1972', '2000-2001', '1957-1958'],
   answer: 1
 });
-/*questions.push({
+questions.push({
   question: 'Which Laker holds the franchise record for most steals in a single game?',
   selection: ['Magic Johnson', 'Elgin Baylor', 'Kobe Bryant', 'Jerry West'],
   answer: 1
@@ -58,10 +59,10 @@ questions.push({
 questions.push({
   question:'What team did Kobe Bryant recorded an all time NBA record 12 3-pointers against?',
   selection: ['Seattle Supersonics', 'Toronto Raptors', 'LA Clippers', 'San Antonio Spurs'],
-  answer: 1
+  answer: 0
 });
 questions.push({
-  question: 'Wilt Chamberlain holds the franchise single season record of how many RPG',
+  question: 'Wilt Chamberlain holds the franchise single season record of how many RPG?',
   selection: ['14.7 RPG', '18.3 RPG', '21.1 RPG', '26.9 RPG'],
   answer: 2
 });
@@ -99,4 +100,10 @@ questions.push({
   question: 'How many years did Shaquille O\'Neal play as a Laker?',
   selection: ['10', '8', '6', '7'],
   answer: 1
-});*/
+}); 
+
+ questions.sort(function(){
+  return 0.5 - Math.random();
+ });
+
+ questions = questions.slice(0, 10);
