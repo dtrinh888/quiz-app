@@ -34,15 +34,16 @@ html {
 	font-weight: bold;
 	font-size: 24px;
 	margin-left: 20px;
+	float: right;
 }
 
-div #quiz-area{
+/*div #quiz-area{
 	border: red 1px solid;
 }
 
 #quiz-area ul {
   border: 1px solid red;
-}
+}*/
 
 #quiz-area li,
 #quiz-area ul {
@@ -69,4 +70,8 @@ div #quiz-area{
 	-mox-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+
+#reset button{
+	margin: 145px 48px;
 }

@@ -1,4 +1,5 @@
 //questions to push into array
+var questions = [];
 questions.push({
   question: 'Who knocked out the Lakers in the 2006-2007 playoffs?',
   selection: ['Phoenix Suns', 'Denver Nuggets', 'San Antonio Spurs', 'Boston Celtics'],
