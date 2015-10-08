@@ -16,16 +16,14 @@ html {
 }
 
 #quiz-area{
-	margin: 150px 0px;
+	margin: 150px;
 	padding: 100px 40px 40px 40px;
 	width: 400px;
 	height: 200px;	
-	
-
 }
 
 #score{
-	margin: -100px 40px;
+	margin: 0px 40px;
 }
 
 #score-board{
