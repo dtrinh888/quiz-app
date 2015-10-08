@@ -1,6 +1,7 @@
 $(document).ready(function(){
   //create empty array
-  
+
+
   var Quiz = function(q, target){
     var quiz = this;
     
@@ -58,7 +59,7 @@ $(document).ready(function(){
       var chosenAnswer = $('.answer input:checked');   
       
       if (chosenAnswer.length === 0) {
-        alert("Please select an answer before submitting.");
+        alert("Answer must be selected to continue quiz.");
         return false;
       }
       
@@ -90,8 +91,13 @@ $(document).ready(function(){
         // to display an end message
         $('#next').hide();
         $('#score').hide();
-        
-        quiz.target.html("Congrats you've recorded a score of " + correctAnswer + "/" + quiz.questions.length);
+        if(correctAnswer >= 13){
+          quiz.target.html("Congrats you've recorded a score of " + correctAnswer + "/" + quiz.questions.length + "You definitely know about your Lakers!");
+        } else if (correctAnswer <= 12 && correctAnswer >= 7) {
+          quiz.target.html("Not bad you've recorded a score of " + correctAnswer + "/" + quiz.questions.length + "You somewhat know about your Lakers!");
+        } else {
+          quiz.target.html("That's horrible, you've recorded a score of " + correctAnswer + "/" + quiz.questions.length + "You know nothing about your Lakers!");
+        }
       }
     };
     
@@ -99,6 +105,7 @@ $(document).ready(function(){
       // Step 1) Unhide #next and #score
       $('#next').show();
       $('#score').show();
+
       
       // Step 2) Reset the current question counter (quiz.currentQuestion)
       quiz.currentQuestion = 0;
